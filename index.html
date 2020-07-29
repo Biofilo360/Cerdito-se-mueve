@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujando por Mouse</title>
+</head>
+
+<body>
+
+    <h1 id="para">DIBUJO CANVAS POR MOUSE</h1>
+    <input type="button" value="Recargar página" onClick="location.reload();">
+
+
+
+    <br></br>
+
+    <canvas enter width="700" height="500" id="dibujito"></canvas>
+    <script src="dibujo_mouse.js"></script>
+    <p>Cambiar color del pincel </p>
+
+    <input type="color" id="botonColor">
+
+
+    <input type="range" id="barraGrosor" min="1" max="50" onchange="cambioGrosor(this.value)">
+
+    <button onclick="borrar()">Borrar dibujo</button>
+
+</body>
+
+</html>
